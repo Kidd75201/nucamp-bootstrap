@@ -16,6 +16,7 @@
 </head>
 
 <body>
+  <!-- Jumbotron start -->
   <header class="jumbotron jumbotron-fluid">
     <div class="container">
       <div class="row">
@@ -26,15 +27,14 @@
           <h1>NuCamp</h1>
           <h2>a better way to camp</h2>
         </div>
-        <div class="col">
-          <p>
-            This viewport size is currently: <span id="viewport-size"></span>
-            <span id="breakpointName"></span>
-          </p>
+        <div class="mt-4 col col-md-4 col-xl-2">
+          <a type="button" href="#reserveForm" class="btn btn-info btn-lg text-nowrap btn-block">Reserve
+            Campsite</a>
         </div>
       </div>
     </div>
   </header>
+  <!-- Jumbotron end -->
 
   <!-- Navbar start -->
   <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
@@ -64,6 +64,8 @@
   <!-- Navbar end -->
 
   <div class="container">
+
+    <!-- Section 1 - Our Campistes -->
     <div class="row row-content align-items-center">
       <div class="col-sm-4 order-sm-last col-md-3">
         <h2 class="text-sm-right">Discover & Review</h2>
@@ -77,25 +79,31 @@
               Explore our growing database of curated campsites and leave your own
               reviews!
             </p>
-
           </div>
         </div>
       </div>
     </div>
-
+    <!-- Section 1 - Our Campistes  end-->
+    <!-- Section 2 - React Lake Campground -->
     <div class="row row-content align-items-center">
-      <div class="col-sm-4 col-md-3">
+      <div class="col-sm-4 col-md-3 order-sm-start">
         <h2>Featured Campsites</h2>
       </div>
       <div class="col">
-        <h3>React Lake Campground</h3>
-        <p class="d-none d-sm-block">
-          Nestled in the foothills of the Chrome Mountains, this campground on
-          the shores of the pristine React Lake is a favorite for fly fishers.
-        </p>
+        <div class="media">
+          <div class="media-body align-self-center">
+            <h3>React Lake Campground</h3>
+            <p class="d-none d-sm-block">
+              Nestled in the foothills of the Chrome Mountains, this campground on
+              the shores of the pristine React Lake is a favorite for fly fishers.
+            </p>
+          </div>
+          <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="react-lake-thumb">
+        </div>
       </div>
     </div>
-
+    <!-- Section 2 - React Lake Campground end -->
+    <!-- Section 3 - Bootstrap Outfitters -->
     <div class="row row-content align-items-center">
       <div class="col-sm-4 order-sm-last col-md-3">
         <h2 class="text-sm-center">Our Community Partners</h2>
@@ -113,7 +121,41 @@
         </div>
       </div>
     </div>
-  </div>
+    <!-- Section 3 - Bootstrap Outfitters end -->
+    <!-- Section 4 - Reserve Form -->
+    <div class="row row-content align-items-center">
+      <div class="col-sm-6 mx-auto">
+        <div class="card">
+          <h3 class="card-header bg-info text-light">Reserve a Campsite</h3>
+          <div class="card-body">
+            <form id="reserveForm">
+              <div class="form-group row">
+                <label class="col-sm-6" for="numCampers">Number of Campers</label>
+                <div class="col-sm-6">
+                  <select class="form-control row" id="numCampers" name="numCampers">
+                    <option>Select</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-6" for="date">Date</label>
+                <div class="col-sm-6">
+                  <input type="date" class="form-control row" id="date">
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 4 - Reserve Form end-->
+  </div> <!-- Section -Container end -->
   <!-- Footer start -->
   <footer>
     <div class="container">
