@@ -17,6 +17,7 @@
 </head>
 
 <body>
+  <!-- Jumbotron start -->
   <header class="jumbotron jumbotron-fluid">
     <div class="container">
       <div class="row ">
@@ -29,8 +30,8 @@
         </div>
       </div>
     </div>
-
   </header>
+  <!-- Jumbotron end -->
 
   <!-- Navbar start -->
   <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
@@ -56,8 +57,8 @@
   </nav>
   <!-- Navbar end -->
 
-
   <div>
+    <!-- Section 1 About Us-->
     <div class="container">
       <div class="row">
         <div class="col">
@@ -71,6 +72,7 @@
       </div>
     </div>
 
+    <!-- Section 2 Our Mission -->
     <div class="container">
       <div class="row row-content">
         <div class="col col-sm-6 col-md-6 col-lg-6">
@@ -84,25 +86,54 @@
       </div>
     </div>
 
+    <!-- Section 3 Community Partners -->
     <div class="container">
       <div class="row row-content">
         <div class="col">
           <h3>Community Partners</h3>
-          <h4>Bootstrap Outfitters <small>Outdoor Gear Specialists</small></h4>
-          <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with the gear you need at prices you can't
-            beat.</p>
-          <h4>Git Out Expeditions <small>Group Adventure Expeditions</small></h4>
-          <p class="d-none d-sm-block">Join Git Out Expeditions to explore new horizons with a group of other
-            adventurers!</p>
-          <h4>Mongo Fly Shop <small>Your Neighborhood Fly Fishing Shop</small></h4>
-          <p class="d-none d-sm-block">Need a new fishing pole, a tacklebox, or flies of all kinds? Stop by Mongo Fly
-            Shop.</p>
-          <h4>Node Outdoor Apparel <small>Outdoor Clothes & Shoes</small></h4>
-          <p class="d-none d-sm-block">From polar fleeces to swimsuits, hiking boots to waders, a visit to Node will be
-            sure to get you covered.</p>
+          <!-- Tab Navigation -->
+          <ul class="nav nav-tabs">
+            <li class="nav-item"><a href="#bootstrap" class="nav-link active" role="tab" data-toggle="tab">Bootstrap
+                Outfitters</a></li>
+            <li class="nav-item"><a href="#git" class="nav-link" role="tab" data-toggle="tab">Git out Expeditions</a>
+            </li>
+            <li class="nav-item"><a href="#mongo" class="nav-link" role="tab" data-toggle="tab">Mongo Fly Shop</a></li>
+            <li class="nav-item"><a href="#node" class="nav-link" role="tab" data-toggle="tab">Node Outdoor Apparel</a>
+            </li>
+          </ul>
+          <!-- Tab Navigation end-->
+
+          <!-- Tab content start -->
+          <div class="tab-content">
+            <div class="tab-pane fade show active" role="tabpanel" id="bootstrap">
+              <h4>Bootstrap Outfitters <small>Outdoor Gear Specialists</small></h4>
+              <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with the gear you need at prices you can't
+                beat.</p>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="git">
+              <h4>Git Out Expeditions <small>Group Adventure Expeditions</small></h4>
+              <p class="d-none d-sm-block">Join Git Out Expeditions to explore new horizons with a group of other
+                adventurers!</p>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="mongo">
+              <h4>Mongo Fly Shop <small>Your Neighborhood Fly Fishing Shop</small></h4>
+              <p class="d-none d-sm-block">Need a new fishing pole, a tacklebox, or flies of all kinds? Stop by Mongo
+                Fly
+                Shop.</p>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="node">
+              <h4>Node Outdoor Apparel <small>Outdoor Clothes & Shoes</small></h4>
+              <p class="d-none d-sm-block">From polar fleeces to swimsuits, hiking boots to waders, a visit to Node will
+                be
+                sure to get you covered.</p>
+            </div>
+          </div>
+          <!-- Tab content end -->
         </div>
       </div>
     </div>
+    <!-- Section 3 Community Partners end -->
+
   </div>
 
   <!-- Footer start -->
@@ -135,15 +166,12 @@
     </div>
   </footer>
   <!-- Footer end -->
-</body>
 
-
-<!-- Footer end -->
-<!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>
+  <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
