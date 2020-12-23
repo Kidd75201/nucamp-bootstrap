@@ -1,0 +1,17 @@
+Notes:
+
+Week 1:
+
+Week 2:
+
+Week 3:
+
+* Add Tooltips (jumbotron section for reseve button)- you must add Bootstrap attributes: data-toggle, data-placement & title.
+    - The title holds the text for the tooltip. The other two tooltip-related attributes we used above are optional. 
+    - The data-html attribute allows you to use HTML inside the title. The data-placement attribute lets you specify the location relative to the element where a tooltip displays itself - to the top, right, left, or bottom. There is also an auto option that reorients the tooltip placement dynamically as needed.
+    - You must activate it by adding a little bit of JavaScript (in the form of jQuery)
+      <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
