@@ -328,32 +328,9 @@
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
 
   <!-- JQuery to activate Pause/Play -->
-  <script>
-    $(function () {
-      // slide time
-      $(".carousel").carousel({ interval: 2000 });
-
-      // button Pause/Play
-      $("#carouselButton").click(function () {
-        if ($("#carouselButton").children("i").hasClass("fa-pause")) {
-          $(".carousel").carousel("pause");
-          $("#carouselButton").children("i").removeClass("fa-pause");
-          $("#carouselButton").children("i").addClass("fa-play");
-          //alert(".click() if function .carousel(\"pause\"); called.");
-        } else {
-          $(".carousel").carousel("cycle");
-          $("#carouselButton").children("i").removeClass("fa-play");
-          $("#carouselButton").children("i").addClass("fa-pause");
-          //alert(".click() else function .carousel(\"cycle\") called.");
-        }
-      });
-
-
-    });
-  </script>
+  <script src="js/scripts.js"> </script>
 
 </body>
 
