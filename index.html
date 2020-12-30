@@ -5,13 +5,15 @@
   <!-- Required meta tags always come first -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <!-- Bootstrap CSS -->
+  <!-- build:css css/main.css -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-  <!-- Additional CSS must be placed after Bootstrap CSS -->
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
   <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-  <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <!-- endbuild -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" rel="stylesheet" />
   <title>NuCamp: A Better Way to Camp</title>
 </head>
 
@@ -42,10 +44,12 @@
   <div id="reserveModal" class="modal fade" role="dialog">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
+        <!-- modal-header -->
         <div class="modal-header bg-info text-white">
           <h3 class="modal-title">Reserve a Campsite</h3>
           <button type="button" class="close" data-dismis="modal">&times;</button>
         </div>
+        <!-- modal-body -->
         <div class="modal-body">
           <div class="container-fluid">
             <!-- Form  -->
@@ -92,6 +96,7 @@
             <!-- Form  end-->
           </div>
         </div>
+        <!-- modal-body end -->
       </div>
     </div>
   </div>
@@ -134,10 +139,12 @@
   <div id="loginModal" class="modal fade" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
+        <!-- modal-header -->
         <div class="modal-header">
           <h3 class="modal-title">Login</h3>
           <button type="button" class="close" data-dismis="modal">&times;</button>
         </div>
+        <!-- modal-body -->
         <div class="modal-body">
           <div class="container-fluid">
             <form>
@@ -166,6 +173,7 @@
             </form>
           </div>
         </div>
+        <!-- modal-body end -->
       </div>
     </div>
   </div>
@@ -178,13 +186,14 @@
       <div class="col-md-8 mx-auto">
         <!-- Carousel div -->
         <div class="carousel slide" id="homeCarousel" data-ride="carousel">
+
           <!-- Slide index - data-slide-to attribute -->
           <ol class="carousel-indicators">
             <li data-target="#homeCarousel" data-slide-to="0" class="active"> </li>
             <li data-target="#homeCarousel" data-slide-to="1"> </li>
             <li data-target="#homeCarousel" data-slide-to="2"> </li>
           </ol>
-          <!-- Carousel slides -->
+          <!-- Slides -->
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="img/breadcrumb-trail.jpg" alt="Breadcrumb Trail Campground" class="d-block w-100">
@@ -220,8 +229,7 @@
             <span class="carousel-control-next-icon"> </span>
             <span class="sr-only"> Next </span>
           </a>
-          <!-- Carousel Button -->
-
+          <!-- Play/Pause Button -->
           <button class="btn btn-danger btn-sm" id="carouselButton">
             <i class="fa fa-pause"></i>
           </button>
@@ -325,13 +333,14 @@
   <!-- Footer end -->
 
   <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+  <!-- build.js js/main.js -->
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
   <!-- JQuery to activate Pause/Play -->
   <script src="js/scripts.js"> </script>
-
+  <!-- endbuild -->
 </body>
 
 </html>

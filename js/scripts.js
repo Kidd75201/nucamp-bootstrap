@@ -1,3 +1,4 @@
+// ready function/ready method
 $(function () {
     // slide time
     $(".carousel").carousel({ interval: 2000 });
