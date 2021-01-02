@@ -17,5 +17,14 @@ $(function () {
         //alert(".click() else function .carousel(\"cycle\") called.");
       }
     });
+
+   $('#reserveButton').click(function() {
+     $('#reserveModal').modal('show');
+   })
+
+   $('#loginButton').click(function() {
+    $('#loginModal').modal('show');
+  })
+   
     
   });
